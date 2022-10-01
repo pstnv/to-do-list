@@ -1,0 +1,303 @@
+html {
+	-webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+}
+
+body {
+	margin: 0;
+	background-color: #d4e2ef;
+	font-family: 'Rubik', sans-serif;
+}
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	margin: 50px 0;
+	padding: 0;
+	width: 100%;
+	max-width: 500px;
+	height: calc(100vh - 100px);
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0;
+	box-shadow: 2px 2px 4px rgb(18, 40, 98, 0.1), -2px -2px 4px rgb(18, 40, 98, 0.1);
+}
+
+.header {
+	height: 200px;
+	/* background-image: url('pic_background_1.jpg'); */
+	background-image: url('https://cdn.glitch.global/f880d5a0-04fb-4c8d-b9d3-967d9b999571/pic_background_2.jpg?v=1661763046073');
+	/* background-image: url('pic_background_3.jpg'); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-left {
+	padding: 20px 20px 0;
+	border-bottom: 6px solid #7bd2f6;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.header-left h2 {
+	font-weight: 300;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+#date {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.header-right {
+	padding: 20px;
+	min-width: 150px;
+	background-color: rgb(18, 40, 98, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.header-right p {
+	margin: 5px 0 0;
+	text-align: center;
+	font-size: 16px;
+}
+
+#total {
+	font-size: 40px;
+}
+
+#btnClear {
+	margin-top: 20px;
+	padding: 4px 16px;
+	border-radius: 0;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+@media (any-pointer: fine) and (any-hover: hover) {
+	#btnClear:hover {
+		background-color: #ffffff;
+		color: rgb(18, 40, 98);
+	}
+}
+
+form {
+	padding: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: #ffffff;
+}
+
+.list {
+	padding: 0;
+}
+
+.list li {
+	margin: 2px 0 0;
+	padding: 18px 0 3px;
+	font-size: 20px;
+	color: #122862;
+	list-style-type: none;
+	border-radius: 0;
+	border-bottom: 1px solid lightgrey;
+	cursor: pointer;
+}
+
+.done {
+	-webkit-text-decoration-thickness: 1px;
+	text-decoration-thickness: 1px;
+	-webkit-text-decoration-line: line-through;
+	text-decoration-line: line-through;
+	-webkit-text-decoration-color: #ffffff;
+	text-decoration-color: #ffffff;
+	background-color: rgb(18, 40, 98, 0.2);
+}
+
+.newRecord {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+#inputAdd {
+	padding: 10px;
+	flex: 1;
+	border-radius: 0;
+	border: 1px solid lightgrey;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	color: rgb(18, 40, 98);
+}
+
+#inputAdd::placeholder {
+	font-size: 14px;
+}
+
+#inputAdd:focus {
+	outline: 2px solid rgb(18, 40, 98, 0.3);
+}
+
+#btnAdd {
+	margin-left: 10px;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	overflow: hidden;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+}
+
+#btnAdd:focus {
+	outline: 2px solid rgb(18, 40, 98, 0.3);
+}
+
+#btnAdd img {
+	height: 100%;
+}
+
+@media all and (max-width: 500px) {
+
+	.container {
+		margin: 0;
+		height: 100vh;
+		min-height: 400px;
+	}
+
+	.header {
+		height: 180px;
+	}
+
+	.header-left {
+		padding: 15px 15px 0;
+	}
+
+	.header-left h2 {
+		font-size: 26px;
+	}
+
+	#date {
+		font-size: 14px;
+	}
+
+	.header-right {
+		padding: 15px;
+		min-width: 100px;
+	}
+
+	.header-right p {
+		font-size: 14px;
+	}
+
+	#total {
+		font-size: 30px;
+	}
+
+	form {
+		padding: 15px;
+	}
+
+	.list li {
+		/* padding: 14px 0 2px; */
+		font-size: 18px;
+	}
+
+	.newRecord {
+		margin: 0;
+	}
+
+	#inputAdd {
+		padding: 8px;
+	}
+
+	#inputAdd::placeholder {
+		font-size: 13px;
+	}
+
+	#btnAdd {
+		margin-left: 5px;
+		width: 35px;
+		height: 35px;
+	}
+}
+
+
+@media all and (max-width: 330px) {
+
+	.header {
+		height: 140px;
+	}
+
+	.header-left {
+		padding: 10px 10px 0;
+	}
+
+	.header-left h2 {
+		font-size: 20px;
+	}
+
+	#date {
+		font-size: 13px;
+	}
+
+	.header-right {
+		padding: 10px;
+		min-width: 80px;
+	}
+
+	.header-right p {
+		margin: 0;
+	}
+
+	#btnClear {
+		padding: 4px 10px;
+	}
+
+	form {
+		padding: 15px;
+	}
+
+	.list {
+		margin: 8px 0;
+	}
+
+	.list li {
+		padding: 14px 0 2px;
+		/* padding: 12px 0 2px; */
+		font-size: 16px;
+	}
+
+	#inputAdd {
+		width: 100px;
+		padding: 6px;
+	}
+
+	#inputAdd::placeholder {
+		font-size: 12px;
+	}
+}
