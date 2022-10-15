@@ -29,9 +29,7 @@ body {
 
 .header {
 	height: 200px;
-	/* background-image: url('pic_background_1.jpg'); */
-	background-image: url('https://cdn.glitch.global/f880d5a0-04fb-4c8d-b9d3-967d9b999571/pic_background_2.jpg?v=1661763046073');
-	/* background-image: url('pic_background_3.jpg'); */
+	background-image: url('../public/img/bg/bg_2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

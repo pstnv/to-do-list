@@ -120,8 +120,8 @@ export class List extends Component {
                     />
                     <button
                         onClick={() => this.addItem(this.state.userInput)}
-                        id="btnAdd"
-                    > <img src="https://cdn.glitch.global/f880d5a0-04fb-4c8d-b9d3-967d9b999571/icon_plus.png?v=1661763057394" alt="Добавить запись"/>
+                        id="btnAdd">
+                        <img src="../img/btn_plus.png" alt="Добавить запись"/>
                     </button>
                 </div>
                 <ul className="list">
